@@ -1,0 +1,36 @@
+.floating-menu {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .floating-menu div {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .floating-menu img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .floating-menu .close-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+  }
+  

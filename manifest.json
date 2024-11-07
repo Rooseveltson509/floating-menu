@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "Floating Menu Extension",
+    "version": "1.0",
+    "description": "An extension with a vertical floating menu that appears after three rage clicks.",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "vendor/html2canvas.min.js",
+                "assets/icons/icon16.svg",
+                "assets/icons/icon48.svg",
+                "assets/icons/icon64.svg",
+                "assets/icons/icon128.svg"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "vendor/html2canvas.min.js",
+                "content/content.js"
+            ],
+            "css": [
+                "styles/global.css"
+            ],
+            "type": "module"
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/icons/icon16.svg",
+            "48": "assets/icons/icon48.svg",
+            "64": "assets/icons/icon64.svg",
+            "128": "assets/icons/icon128.svg"
+        }
+    },
+    "icons": {
+        "16": "assets/icons/icon16.svg",
+        "48": "assets/icons/icon48.svg",
+        "64": "assets/icons/icon64.svg",
+        "128": "assets/icons/icon128.svg"
+    }
+}

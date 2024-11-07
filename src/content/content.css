@@ -1,0 +1,91 @@
+.floating-menu {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .floating-menu {
+    background: #424B5A;
+    border-radius: 20px 0px;
+  }
+  
+  .floating-menu div {
+    /* margin: 10px 0; */
+    cursor: pointer;
+  }
+  
+  .floating-menu img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .floating-menu img:hover{
+    background-color: #C41E82;
+  }
+  
+  .floating-menu .close-button {
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    width: 30px;
+    opacity: 0px;
+    background: #2E3746;
+    color: white;
+  }
+  
+  .menu-item {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    /* margin: 5px 0; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  #popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  #custom-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 10000;
+  }
+  
+  #custom-menu a {
+    text-decoration: none;
+    color: black;
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "sourceMap": true,
+      "strict": true,
+      "target": "ES6", // Utilisez ES6 ou plus récent
+      "module": "ESNext", 
+      "moduleResolution": "node",
+      "lib": ["dom", "es2015"],
+      "esModuleInterop": true,
+      "types": ["node","chrome"],
+      "skipLibCheck": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
